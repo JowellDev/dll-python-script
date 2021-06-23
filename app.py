@@ -209,16 +209,5 @@ class DoubleLinkedList:
 
 
 if __name__ == '__main__':
-    maListe = DoubleLinkedList(76, 98, 'python')
-    maListe.unshift('gateway')
-    maListe.append('reactJs')
-    maListe.shift()
-    maListe.pop()
-    maListe.insert('gateway', 1)
-    maListe.remove('gateway')
-    print('index:', maListe.indexOf('python'))
-    maListe[2] = 'JavaScript/TypeScript/Python/'
-    print('Longueur de la dll :', len(maListe))
-    print('element à l\'index 0:', maListe[2])
-    print('counter:', maListe.count('codeur'))
+    maListe = DoubleLinkedList()
     maListe.display()
