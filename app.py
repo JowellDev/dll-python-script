@@ -117,7 +117,7 @@ class DoubleLinkedList:
         while n is not None:
             if k == 0 and index == k:
                 self._insert_to_start(data)
-            elif index == k:
+            if index == k:
                 new_node = Node(data)
                 new_node.next = n
                 new_node.prev = n.prev
@@ -209,5 +209,5 @@ class DoubleLinkedList:
 
 
 if __name__ == '__main__':
-    maListe = DoubleLinkedList()
+    maListe = DoubleLinkedList(3, 6, 87)
     maListe.display()
